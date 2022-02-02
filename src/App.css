@@ -1,11 +1,11 @@
 @font-face {
-  font-family: iranyekan;
+  font-family: iranyekanwebbold;
   src: url(./componet/assets/fonts/iranyekanwebbold.woff);
 }
 @font-face {
-  font-family: iranyekan;
+  font-family: iranyekanwebregular;
   src: url(./componet/assets/fonts/iranyekanwebregular.woff);
 }
 * {
-  font-family: "iranyekan", Arial;
+  font-family: "iranyekanwebregular", Arial;
 }

@@ -2,11 +2,14 @@ import React from "react";
 import "./Home.css";
 import torobLogo from "../assets/images/torob_logo.svg";
 import search from "../assets/images/search.svg";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 export default function Home() {
   return (
     <div className="container">
-      <header></header>
+      <Header />
+
       <main>
         <div className="logo-wrapper">
           <div className="logo">
@@ -23,18 +26,18 @@ export default function Home() {
         </div>
         <div className="search">
           <form id="searchFormInput" className="search-form-home">
-            <div className="search-btn-home">
+            <div className="search-icon-home">
               <img
                 src={search}
-                style={{ width: 46, height: 46 }}
+                style={{ width: 20, height: 20 }}
                 alt="search"
               />
             </div>
-            {/* <input
+            <input
               type="text"
               className="search-text-home"
               placeholder="نام کالا را وارد کنید"
-            /> */}
+            />
           </form>
         </div>
         <div className="offers-btn">
@@ -43,7 +46,7 @@ export default function Home() {
           </a>
         </div>
       </main>
-      <footer></footer>
+      <Footer />
     </div>
   );
 }
