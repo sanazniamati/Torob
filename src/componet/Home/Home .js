@@ -9,7 +9,6 @@ export default function Home() {
   return (
     <div className="container">
       <Header />
-
       <main>
         <div className="logo-wrapper">
           <div className="logo">

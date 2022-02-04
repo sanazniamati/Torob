@@ -1,0 +1,33 @@
+.dropdown__content {
+  z-index: 12;
+  position: absolute;
+  right: 40px;
+  left: 40px;
+  top: 48px;
+  margin-top: 12px;
+  border-radius: 4px;
+  background-color: #f9fafb;
+}
+.link-on-click {
+  cursor: pointer;
+  text-decoration: none;
+}
+.droptitle {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 16px 24px;
+  border-bottom: 1px solid #e6e6e6;
+  text-align: start;
+}
+.dropitems {
+  z-index: -10;
+  column-width: 180px;
+  column-fill: balance;
+  font-size: 12px;
+  padding: 0px 38px 14px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}

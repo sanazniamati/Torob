@@ -1,0 +1,27 @@
+/* menu styles */
+.menuCats {
+  /* width: 1171.71px; */
+  -webkit-box-flex: 1;
+  flex: 1;
+  text-align: right;
+  margin-bottom: 5px;
+  margin-inline-start: -10px;
+  direction: rtl;
+}
+.account-dropdown {
+  position: relative;
+}
+.dropdown {
+  display: inline-block;
+}
+.dropdown-index {
+  color: #808080;
+  cursor: pointer;
+  line-height: 48px;
+  margin-inline-end: 24px;
+  font-size: 14px;
+  text-decoration: none;
+}
+.dropdown-index:hover {
+  color: #d73948;
+}

@@ -1,0 +1,5 @@
+.left_content {
+  width: calc(100vw - 384px);
+  height: 100vh;
+  background-color: #c1c1c1;
+}
