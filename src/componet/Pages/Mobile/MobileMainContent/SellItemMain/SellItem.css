@@ -1,0 +1,46 @@
+.item_container{
+    background-color: white;
+    width: 181px;
+    height: 380px;
+    padding: 12px;
+    border-radius: 6px;
+    margin: 5px;
+    cursor: pointer;
+     /* display:inline-block;  */
+      /* display: grid;
+    justify-content: space-evenly; 
+     grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));   */
+    /* justify-self: end;
+    align-self: end; */
+  }
+  .image_box_mobile{
+    width: 157px; ;
+    height: 145px;
+  }
+  .image_box_mobile img{
+    width: 100%;
+    height: 100%;
+  }
+  .title{
+    color: #333;
+    font-size: 14px ;
+    font-family: "iranyekanwebregular", Arial;
+    margin: 12px 0px 45px 0px;
+    overflow: hidden;
+    line-height: 1.5em;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  .price{
+    margin: 0px 0px 12px 0px;
+    color: #333333;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: "iranyekanwebregular", Arial;
+  }
+  .market_count{
+    color: #808080;
+    font-size: 14px;
+    font-family: "iranyekanwebregular", Arial;
+  }

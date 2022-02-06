@@ -5,11 +5,11 @@ import MobileBrand from "../../../../data.json";
 
 const Similar_categories = [
   { id: 0, categories: "تبلت" },
-  { id: 1, categories: "هذفون،هدست و هندزفری" },
+  { id: 1, categories: "هدفون،هدست و هندزفری" },
   { id: 2, categories: "لوازم جانبی موبایل و تبلت" },
   { id: 3, categories: "قطعات موبایل و تبلت" },
-  { id: 3, categories: "  لوازم الکتریکی همراه " },
-  { id: 3, categories: "  ساعت و مچ بند هوشمند   " },
+  { id: 4, categories: "  لوازم الکتریکی همراه " },
+  { id: 5, categories: "  ساعت و مچ بند هوشمند   " },
 ];
 export default function AsideContent() {
   const [isActive, setIsActive] = useState(true);
@@ -31,6 +31,7 @@ export default function AsideContent() {
                     viewBox="0 0 24 24"
                     // xmlns="http://www.w3.org/2000/svg"
                     alt="chevron-down"
+                    style={{ transform: "rotate(180deg)" }}
                     // style="transform: rotate(0deg);"
                   >
                     <g>

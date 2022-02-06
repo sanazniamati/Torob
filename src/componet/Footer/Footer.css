@@ -3,9 +3,26 @@ footer {
   height: 40px;
   background-color: #f9fafb;
   padding: 10px 16px 10px 40px;
-  position: fixed;
+   position: fixed;
   bottom: 0;
   left: 0;
-  right: 0;
-  top: 585px;
+  right: 0; 
+  /* top:585px; */
+  
+}
+.footer_div{
+  display: flex;
+  justify-content: space-between;
+}
+.foote_div_float_left a {
+  margin: 0px 24px 0px 0px;
+  text-decoration: none;
+  color: #808080;
+  font-size: 14px;
+}
+.footer_div_float_right a{
+  margin: 0px 27px 0px 0px;
+  text-decoration: none;
+  color: #808080;
+  font-size: 14px;
 }

@@ -36,6 +36,7 @@
   margin-inline-start: 8px;
   display: inline-block;
   font-size: 16px;
+  font-weight: 500;
 }
 .icon_container {
   width: 24px;
@@ -122,15 +123,7 @@ svg_style svg {
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   grid-column-gap: 24px;
 }
-.input_wrapper {
-  position: relative;
-  display: flex;
-  width: 143.5px;
-  height: 40px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 0;
-}
+
 .input_wrapper span {
   display: inline;
   font-size: 12px;
