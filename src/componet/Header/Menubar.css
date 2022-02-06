@@ -25,3 +25,13 @@
 .dropdown-index:hover {
   color: #d73948;
 }
+.dropdown__content {
+  z-index: 12;
+  position: absolute;
+  right: 40px;
+  left: 40px;
+  top: 48px;
+  margin-top: 12px;
+  border-radius: 4px;
+  background-color: #f9fafb;
+}

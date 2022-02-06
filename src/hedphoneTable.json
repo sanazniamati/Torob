@@ -1,0 +1,42 @@
+[
+  {
+    "id": 0,
+    "nameF": "سامسونگ",
+    "nameE": "Samsung"
+  },
+  {
+    "id": 1,
+    "nameF": "شیائومی",
+    "nameE": "Xiomi"
+  },
+  {
+    "id": 2,
+    "nameF": "هوآوی",
+    "nameE": "Huawei"
+  },
+  {
+    "id": 3,
+    "nameF": "نوکیا",
+    "nameE": "Nokia"
+  },
+  {
+    "id": 4,
+    "nameF": "اپل",
+    "nameE": "Apple"
+  },
+  {
+    "id": 5,
+    "nameF": "آنر",
+    "nameE": "Honor"
+  },
+  {
+    "id": 6,
+    "nameF": "موتورلا",
+    "nameE": "Motorola"
+  },
+  {
+    "id": 7,
+    "nameF": "ال جی",
+    "nameE": "LG"
+  }
+]

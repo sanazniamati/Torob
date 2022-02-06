@@ -22,6 +22,7 @@
   background-color: white;
   margin-top: 16px;
   display: flex;
+  flex-direction: column;
 }
 .filter_title_container {
   cursor: pointer;
@@ -42,4 +43,176 @@
   /* margin: 12px 0px; */
   float: left;
   transition: all 300ms ease 0s;
+}
+.input_wrapper {
+  height: 40px;
+  padding: 0px 12px;
+  display: flex;
+  flex-direction: row-reverse;
+  border: 1px solid #c4cdd5;
+  border-radius: 4px;
+  background-color: white;
+  position: relative;
+}
+.input_wrapper input {
+  height: 100%;
+  width: 100%;
+
+  outline: none;
+  font-family: inherit;
+  font-size: 14px;
+  flex: 1 1 0%;
+  padding-inline-start: 8px;
+  border: none;
+}
+.svg_style svg {
+  width: 24px;
+  height: 24px;
+}
+.filter_brand_container {
+  margin-top: 4px;
+}
+.filter_brand {
+  margin-top: 4px;
+  display: flex;
+  min-height: 32px;
+  padding: 4px 8px;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+  text-decoration: none;
+}
+.filter_brand_item {
+  color: rgb(51, 51, 51);
+  font-size: 14px;
+  font-weight: normal;
+}
+
+svg_style svg {
+  fill: rgb(84, 84, 84);
+  width: 18;
+  height: 18;
+}
+/* دسته های مشابه استایل */
+.parents {
+  margin-inline-start: 0px;
+  height: 48px;
+  color: rgb(51, 51, 51);
+  display: flex;
+  text-decoration: none;
+}
+.chev {
+  transition: all 0.3s ease 0s;
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px 5px 5px;
+}
+.leaf {
+  line-height: 42px;
+  font-size: 14px;
+  font-weight: normal;
+  cursor: pointer;
+}
+/* price قیمت  */
+.price_inputs {
+  display: grid;
+  width: 100%;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-column-gap: 24px;
+}
+.input_wrapper {
+  position: relative;
+  display: flex;
+  width: 143.5px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0;
+}
+.input_wrapper span {
+  display: inline;
+  font-size: 12px;
+  color: #808080;
+  margin-inline-start: 8px;
+  line-height: 40px;
+  order: 1;
+}
+.input_box {
+  line-height: 40px;
+  height: 40px;
+  outline: none;
+  background-color: transparent;
+  padding: 1px 2px 1px 8px;
+  font-weight: normal;
+  font-size: 14px;
+  direction: ltr;
+}
+.button_apply_container {
+  background-color: white;
+  margin-top: 24px;
+}
+.button_apply {
+  position: relative;
+  border-radius: 4px;
+  text-align: center;
+  color: #333333;
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  line-height: 35px;
+  padding: 2px 16px 3px 16px;
+  background-color: #ecedef;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  margin-bottom: 24px;
+}
+.search_form_container {
+  width: 100%;
+  margin-top: 14px;
+  padding: 0 12px;
+  padding-top: 5px;
+}
+.availabilty_filter {
+  padding: 16px 0 32px 0;
+  display: flex;
+}
+.availabilty_filter .checkbox {
+  display: inline-block;
+  border: 1px solid #8897a8;
+  border-radius: 4px;
+  width: 24px;
+  height: 24px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.availabilty_filter p {
+  display: inline-block;
+  margin: 0 8px;
+  line-height: 24px;
+  font-weight: normal;
+}
+/* price-list-link */
+.price_list_link {
+  color: #d73948;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: right;
+  display: block;
+  margin: 12px 0px 8px;
+  text-decoration: none;
+}
+/* پر بازدید ها */
+.most_visited_link {
+  text-align: right;
+  padding: 4px 12px;
+}
+.most_visited_link a {
+  text-decoration: none;
+  color: #808080;
+  font-size: 14px;
+  text-align: right;
+  padding: 4px 12px;
 }

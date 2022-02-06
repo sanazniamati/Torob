@@ -1,6 +1,9 @@
 import React from "react";
 import { useState } from "react";
 import "./Menubar.css";
+import MobileMenuContent from "./subMenu/Mobile/MobileMenuContent";
+import LapTopMenuContent from "./subMenu/Laptop&PC/LapTopMenuContent";
+
 const menuItems = [
   { name: "موبایل و تبلت", id: 0 },
   { name: "لپ تاپ،کامپیوتر،اداری", id: 1 },
@@ -12,20 +15,32 @@ const menuItems = [
   { name: "سایر دسته ها", id: 7 },
 ];
 export default function Menubar() {
-  const [showMenuItem, setShowMenuItem] = useState(false);
-  const showMenu = () => setShowMenuItem((showMenuItem) => !showMenuItem);
+  const [isMoboleActive, setIsMoboleActive] = useState(false);
+  const showMenu = () => setIsMoboleActive((isMoboleActive) => !isMoboleActive);
   return (
     <div>
       <div className="menuCats">
         {menuItems.map((item) => (
-          <span key={item.id}>
-            <div className="dropdown account-dropdown" onClick={showMenu}>
-              <a className="dropdown_trigger dropdown-index" href="/">
+          <span>
+            <div className="dropdown account-dropdown ">
+              <a
+                key={item.id}
+                className="dropdown_trigger dropdown-index"
+                href="/"
+                onClick={showMenu}
+              >
                 {item.name}
               </a>
             </div>
           </span>
         ))}
+        {/* subMenu if showMenuItem=true show subMenuContent */}
+        <div className="dropdown__content">
+          {/* <MobileMenuContent /> */}
+          {isMoboleActive ? <MobileMenuContent /> : null}
+
+          {/* <LapTopMenuContent /> */}
+        </div>
       </div>
     </div>
   );
