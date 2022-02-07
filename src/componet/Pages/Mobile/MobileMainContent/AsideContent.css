@@ -31,7 +31,6 @@
   justify-content: flex-end;
 }
 .filter_title {
-  /* line-height: 48px; */
   margin: 0px;
   margin-inline-start: 8px;
   display: inline-block;
@@ -41,7 +40,6 @@
 .icon_container {
   width: 24px;
   height: 24px;
-  /* margin: 12px 0px; */
   float: left;
   transition: all 300ms ease 0s;
 }
@@ -66,9 +64,10 @@
   padding-inline-start: 8px;
   border: none;
 }
-.svg_style svg {
+.svg_style img {
   width: 24px;
   height: 24px;
+  transform: rotate(180deg);
 }
 .filter_brand_container {
   margin-top: 4px;
@@ -90,7 +89,6 @@
   font-size: 14px;
   font-weight: normal;
 }
-
 svg_style svg {
   fill: rgb(84, 84, 84);
   width: 18;
@@ -116,6 +114,9 @@ svg_style svg {
   font-weight: normal;
   cursor: pointer;
 }
+/* .leaf firs:only-child {
+  background-color: red;
+} */
 /* price قیمت  */
 .price_inputs {
   display: grid;
@@ -123,7 +124,6 @@ svg_style svg {
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   grid-column-gap: 24px;
 }
-
 .input_wrapper span {
   display: inline;
   font-size: 12px;
@@ -158,7 +158,7 @@ svg_style svg {
   padding: 2px 16px 3px 16px;
   background-color: #ecedef;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 600;
   border: none;
   margin-bottom: 24px;
 }
@@ -206,6 +206,7 @@ svg_style svg {
   text-decoration: none;
   color: #808080;
   font-size: 14px;
+  font-weight: 500;
   text-align: right;
   padding: 4px 12px;
 }

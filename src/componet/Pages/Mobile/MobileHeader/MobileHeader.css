@@ -37,8 +37,7 @@
   flex-grow: 1;
   height: 100%;
   padding: 0 10px;
-  border-top: 1px solid #c4cdd5;
-  border-bottom: 1px solid #c4cdd5;
+  border: 1px solid #c4cdd5;
 }
 .search_btn {
   background-color: #d73948;

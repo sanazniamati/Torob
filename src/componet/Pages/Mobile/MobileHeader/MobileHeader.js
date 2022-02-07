@@ -64,7 +64,9 @@ export default function MobileHeader() {
               </div>
             </div>
           </div>
-          <Loginbtn className="login" />
+          <div className="mobile_login_btn">
+            <Loginbtn />
+          </div>
         </div>
         <div className="mobile_header_secend">
           <Menubar />
