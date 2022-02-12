@@ -51,7 +51,7 @@ export default function MobileHeader() {
                     <div className="svg_style">
                       <svg
                         fill="white"
-                        viewBox="0 0 19 19"
+                        viewBox="0 0 24 24"
                         // xmlns="http://www.w3.org/2000/svg"
                         alt="search"
                       >

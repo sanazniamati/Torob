@@ -1,51 +1,37 @@
-import React from "react";
+//librares
 import { useState } from "react";
+//styles
 import "./Menubar.css";
+// components
 import MobileMenuContent from "./subMenu/Mobile/MobileMenuContent";
-// import LapTopMenuContent from "./subMenu/Laptop&PC/LapTopMenuContent";
+import { menuItems } from "./menuItems";
 
-// import FirstItem from "./itemMenu/FirstItem";
-
-const menuItems = [
-  { name: "موبایل و تبلت", id: 0 },
-  { name: "لپ تاپ،کامپیوتر،اداری", id: 1 },
-  { name: "هایپر مارکت", id: 2 },
-  { name: "لوازم خانگی", id: 3 },
-  { name: "پوشاک،کیف و کفش", id: 4 },
-  { name: "زیبایی و بهداشت", id: 5 },
-  { name: "صوتی و تصویری", id: 6 },
-  { name: "سایر دسته ها", id: 7 },
-];
 export default function Menubar() {
   const [isMobileActive, setIsMobileActive] = useState(false);
   const showMenu = () => setIsMobileActive((isMobileActive) => !isMobileActive);
   return (
     <div>
       <div className="menuCats">
-        {/* <FirstItem /> */}
-        {menuItems.map((item) => (
+        {menuItems.map((item, index) => (
           <span>
             <div className="dropdown account-dropdown ">
               <a
-                key={item.id}
+                key={index}
                 className="dropdown_trigger dropdown-index"
                 href="/"
                 onClick={showMenu}
               >
-                {/* موبایل و تبلت */}
                 {item.name}
               </a>
             </div>
           </span>
         ))}
       </div>
-      {/* subMenu if showMenuItem=true show subMenuContent */}
+
       <div className="dropdown__content">
-        {/* {isMobileActive ? (
-          <div style={{ width: 300, height: 300, color: "red" }}></div>
-        ) : null} */}
-        {/* <MobileMenuContent /> */}
+        {/* وقتی روی منو موبابل و تبلت کلیک شد زیر منو نشان بده */}
         {isMobileActive ? <MobileMenuContent /> : null}
+
         {/* <LapTopMenuContent /> */}
       </div>
     </div>
